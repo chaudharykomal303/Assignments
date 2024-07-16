@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using css</title>
+
+    <!--CSS element selector:-h1{}
+    CSS id selector:-#{}
+    CSS class selector:-.{}
+    CSS universal selector:-*
+    CSS grouping selector:-h1,p{}-->
+    
+    <!--css ko add krne ke liye 3 ways hote hain inline css internal css external css-->
+    <!--head ke andr hum style elemetnt dalte hain that's called internal css basic of css keh skte hain-->
+
+    <!--internal css-->
+    <style>
+
+
+        /*element selector*/
+h2
+{
+    /*property : value*/
+    color:purple
+}
+
+
+
+/*id selector(#)*/
+#style-p{
+    color:aquamarine;
+    
+    text-align:left;
+}
+
+
+
+/*class selector(.)*/
+.sample{
+    color:yellowgreen;
+   
+    text-align:center;
+}
+/*grouping selector 2 css me kuch common a raha ho jase id selector or class selector me se 20 px css common hai common ko hta do */
+
+/*groupin selector*/
+
+#style-p,.sample {
+    font-size:20px;
+}
+
+
+/*universal selector(*)*/
+*{
+    color:rgb(148, 50, 205);
+    font-size:29px;
+   
+
+}
+
+    </style>
+      <!--external css-->
+      <link rel="stylesheet" href="./css/style.css">
+      <!--orange
+      agar internal external ko dekhen to h2 orange ayega because latest ko dekhenge 
+      agar external internal se pehle likha hoga to purple ata reason latest-->
+
+    
+</head>
+<body>
+    <!--styling property hai je color property hai or red value hai es liye css ko stylesheet kahenge or inline css jahan use hogi kuki same line me use ho raha hai-->
+    <!--inline css highest property-->
+    <h2 style="color: red;">welcome</h2>
+    <h1 class="sample>"Hello</h1>
+    <div class="sample">
+        <!--class attribute kehta hai ki mujhe ek se jyada bar use kr skte ho-->
+      <p>uthfu </p>  
+       
+     jlojbfdt hyutygih kuiv j0fvkh jlhj8tvbunm hi.</div>
+    <p id="style-p"></p>lore ipsum dolor sit.</p>
+    <div class="sample">
+        lorem kkihj nugk kihj lniohg stfhk ohhbn komal.</div>
+
+
+
+         <!--CSS background properties
+          background-color
+           background-image
+            background-attachment
+             background-position
+              background (shorthand property)
+         -->
+
+
+        <div class="style-background">komal</div>
+    
+</body>
+</html>
+         

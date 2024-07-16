@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Forms</h2>
+    <!--get data lena use hota hai sign in log in or post data bhejna use hota hai sign up contact us registration post kr rahe ho to action  lena ki submit ke bad file jahan jaye like action=java .php-->
+    <form method="get" target="blank" action="./submit.html">
+        <!--label hota user ko btaneke liye ki enter kya krna hai.
+        mane user ko btya first name enter krna hai.-->
+        <label for="fname">First Name*</label>
+        <!-- input means that user ko kya enter krna 
+         fname same ana chahiye-->
+         <input type="text" name="fname" placeholder="Please enter name">
+         <!--agar me please enter name ke age disabled likhdu ja required likhdu  je input ke attribute hain -->
+         <label for="lname">Last Name</label>
+         <input type="text" name="lname" placeholder="Please enter name">
+
+         <label for="age"> Enter age*</label>
+         <input type="number" name="age" place holder="Enter age">
+         <!--enter age ke age read onlu likhenge means that read nhi kr skte sirf copy karenge pehle se value likhi hoge like 20-->
+         
+         <label for="contact"> Enter contact</label>
+         <input type="tel" name="contact" place holder="Please enter contact">
+         <!--autofocus hota hai ek mtlb jab hum website refresh kr rahi hu to  focus kahan pe ja raha hai like contact pe ja raha hai-->
+
+         <!--radio input-->
+
+         <!--radio ke case me input pehle or label bad me ayege ku click pehle krega user bad me heading.
+         jahan pe value attribute dalna padega because value hai jo wo backend me ja kr save hoti hai. 
+         user type nhi kr raha enter nhi kr raha select kr raha hai.
+         name same kuki ek sekect krna at a time-->
+         <input type="radio" value="male" name="gender" />
+         <label for="male">Male</label>
+
+         <input type="radio" value="female" name="gender" />
+         <label for="female">Female</label>
+
+         <input type="radio" value="others" name="gender_O" />
+         <label for="others">Others</label>
+
+         <!--select colors-->
+         <label for="color">Select your fav color:</label>
+         <input type="color" name="color" >
+
+         <!--select date and time-->
+         <label for="birth">Select Birthday</label>
+         <input type="date" name="birth" >
+         <input type="time" />
+
+         <!--files-->
+         <label for="resume">Resume* </label>
+         <input type="file" name="resume" multiple>
+         <!--agar multiple files add krni ho tab multiple attribute use krte hain-->
+          <!--email and password-->
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Please enter email"
+
+        <label for="password">password </label>
+        <input type="password" name="password" placeholder="Please enter password"
+        minlength="9"
+        maxlength="11"
+        />
+    
+        
+        <!--dropdown
+         country or city select krne ke liye
+         jahan input use nhi karenge jahan pe hum sekect use karenge-->
+         
+            <label for="country"Select Country></label>
+            <select name="country">
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="england">England</option>
+                <option value="india">India</option>
+            </select>
+
+            <!--TEXTAREA means that li multiple lines user ne likhni ho hum instagram linkedia ki bio me textarea hi use krte hain.
+            esme length width use nhi hoge row columns use honge but dikhenge nhi.-->
+
+            <textarea rows="7" cols="20">
+                Enter about yourself
+            </textarea>
+
+            <button type="submit">Submit</button>
+            <input type="Reset">
+
+            <!--fieldset
+            used to ki ek page pe differen form mtlb contact ka alag or email education ecperience so on enke form bhi alag ho-->
+            <form>
+            <fieldset>
+                <legend>login</legend>
+                <!--legend like a captione.
+                jase mane log in caption likh diya.-->
+                <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Please enter email"
+
+        <label for="password">password </label>
+        <input type="password" name="password" placeholder="Please enter password"
+        minlength="9"
+        maxlength="11"
+        />
+
+            </fieldset>
+            </form>
+         
+
+
+
+
+
+
+
+
+
+         
+    </form>
+</body>
+</html>

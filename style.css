@@ -1,0 +1,118 @@
+.text{
+  color: aquamarine;
+  background-color: rgb(28, 8, 81);
+
+  /*text*/
+  /*by default value:left*/
+  text-align: center;
+
+
+  /*by default value:none ,underline,overline,line-through*/
+  text-decoration: overline;
+
+  /*lower case upper case by default initial*/
+  text-transform: capitalize;
+/*by default 0*/
+  text-indent: 20px;
+
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  line-height: 2;
+
+  /*font text ko font kehte hain */
+
+  /*by default:20px*/
+  font-size: 20px;
+  font-style: italic;
+  /*by default:lighter*/
+  font-weight: bold;
+
+  /*kam se kam 3 font family add kro because 1 ko agar broeser read na kre then 2 pe jayega agar koi v na kre to time romon hai*/
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#style-border{
+    color:azure;
+    background-color: brown;
+    /* block level ki element by default width 100% hoti hai */
+    height:100px;
+    width:100px;
+
+     border-width: 2px; 
+    border-color: black;
+     /* border style double etc  */
+    border-style: solid; 
+
+    /* property shorthand hum ese ek line me likhn skte hain jase width style color */
+
+    border:2px dashed yellow;
+
+    /* border-right border-bottom border-left */
+  border-top: 4px solid orange; 
+  /* border  radius used that corner ko circle ki position 50% me circle ho jayega or h:100 w:200 to rectangle bn jayega
+  to create circle h and width same radius 50 % 
+  ellipsen h kam or width jyada elliplse ke liye
+  square se circle or rectangle se ellipse */
+
+  border-radius: 50%;
+
+  /* margin:(outside or any defined borders)space create krne ke liye specially elmennt ke lie bas break nbsp bhi ek tab jitni space create ho jati hai 
+  padding bhi same hai bs inside hai*/}
+
+#style-margin{
+    width:100px;
+    height: 100px;
+    color:rgb(79, 210, 210);
+    background-color: crimson;
+
+    border:2px solid  black;
+    /* specific ke liye */
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+/* prperty shorthand:top right bottom left */
+      margin: 10px; 
+     /* sometime two value hoti hai to hum samjhenge first two value hain jo wo top bottom or jo other two value wo left right ki hogi */
+     margin: 20px 10px; 
+    /* lorem or margin me space a gyi break html me use kr skte but not good practice */
+}
+#style-padding{
+    width: 100px;
+    height:100px;
+    color:cornflowerblue;
+    background-color: blue;
+      
+    border:2px solid rgba(9, 3, 3, 0.848);
+
+    /* padding used that padding word or border ki vich wali space means that inside
+    padding impack box ki height badh jayege also border se bhi but margins se nhi */
+
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+
+    /* property shorthand:top left right bottom */
+padding:10px; 
+/* top bottom / left right  */
+padding:20px 10px; 
+
+/* agar hum border or background remove krde to hume pta nhi chlega ki humne oadding use ki hai ja margin */
+
+box-sizing:border-box;
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+ 
